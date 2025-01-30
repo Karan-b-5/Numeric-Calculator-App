@@ -1,0 +1,125 @@
+
+body{
+    margin: 0;
+    /* height: 100vh; */
+    background-image: url(./bg.jpg);
+    /* margin: 100px; */
+}
+
+.wrapper{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: hsl(0, 0%, 15%);
+    border-radius: 15px;
+    max-width: 400px;
+    /* min-width: 300px; */
+    max-height: 750px;
+    margin: auto;
+    /* margin-top: 10vh; */
+    margin-top: auto;
+    overflow: hidden;  /* is the display has a very long equation*/
+
+    transition: 0.5s ease;
+}
+
+.output h2{
+    letter-spacing: 5px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    color: whitesmoke;
+    padding: 3px;
+    margin: 3px;
+}
+
+#display{
+    width: 100%;
+    padding: 30px;
+    font-size: 3rem;
+    /* text-align: right; */
+    text-align: left;
+    /* border: none; */
+    /* border-color: white; */
+    color: antiquewhite ;
+    background-color: hsl(0, 0%, 20%);
+}
+
+.buttons{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;  /* gap between the rows */
+    padding: 25px; 
+}
+
+button{
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+    border: none;
+    background-color: hsl(0, 0%, 30%);
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    cursor: pointer;
+    /*  */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s ease;
+
+}
+
+button:hover{
+    background-color: hsl(0, 0%, 40%);  /*make it more light*/
+}
+
+button:active{
+    background-color: hsl(0, 0%, 50%);  /*make it even more lighter, so it appears flashing when clicked*/
+}
+
+.operator-btn{
+    background-color: hsl(35, 100%, 50%);
+}
+
+.operator-btn:hover{
+    background-color: hsl(35, 100%, 60%);
+}
+
+.operator-btn:active{
+    background-color: hsl(35, 100%, 70%);
+}
+
+.overlay{
+    position: fixed;
+    /* To make it cover full screen make all left, right, bottom, top values as zero     */
+    /* left: 0; 
+    right: 0;
+    top: 0;
+    bottom: 0; */
+    background-color: #5f5f5f83;
+}
+
+
+@media screen and (max-width: 480px) {
+    .calculator{
+        max-width: 320px;
+        min-height: 550px;
+        margin-top: auto;
+    }
+    #display{
+        padding: 20px;
+        font-size: 2.5rem;
+    }
+    button{
+        margin: auto;
+        width: 60px;
+        height: 60px;
+        border-radius: 30px;
+    }
+}
