@@ -14,5 +14,5 @@ This Simple Calculator app is built using HTML, CSS, and JavaScript. It allows u
 - JavaScript for functionality
 
 ### Live Link:
-[Simple Calculator App](https://numeric-calculator-application.netlify.app/)
+- [Simple Calculator App](https://numeric-calculator-application.netlify.app/)
 
